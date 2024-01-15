@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: .6s;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    color: rgb(255, 255, 255);
+    font-family:'Montserrat';
+    background-color: beige;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.fixed, .width{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: rgb(0, 150, 0);
+}
+
+/* Шапка */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: beige;
+    box-shadow: 0 0 20px 3px rgba(0, 150, 0, 0.3);
+}
+.fixed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+   
+    /* position: fixed;
+    top: 0;
+    z-index: 1000; */
+}
+
+.logo img{
+    width: 150px;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.cont a:hover{
+    color: gray;
+}
+#zak {
+    background-color: rgb(0, 150, 0);
+    color: beige;
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+#zak:hover{
+    border: 1px solid rgb(0, 150, 0);
+    background-color: transparent;
+    color: rgb(0, 150, 0);
+}
+
+/* Баннер */
+
+.back{
+    background: linear-gradient( rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.4)), url(../media/background/eco.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+
+
+.banner_text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+#slogan{
+    font-size: 32px;
+    width: 800px;
+}
+
+.banner_text a{
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgb(0, 150, 0);
+    color: beige;
+    border-radius: 100px;
+    padding: 5px 15px;
+    border: 3px solid transparent;
+}
+.banner_text a:hover{
+    border: 3px solid rgb(0, 150, 0);
+    background-color: transparent;
+}
+
+/* Каталог */
+
+.katalog{
+    color: rgb(0, 150, 0);
+
+}
+
+.kat {
+    color: rgb(0, 150, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 50px;
+}
+
+.filtr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 150, 0);
+    padding: 10px 25px;
+    border-radius: 100px;
+    color: beige;
+    gap: 30px;
+}
+
+.filtr p{
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.filtr p:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 150, 0);
+    cursor: pointer;
+}
+#vse{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 150, 0);
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 150, 0, 0.3);
+    padding: 10px 10px 20px 10px;
+}
+
+.item:hover img{
+    width: 280px;
+}
+
+.item img{
+    width: 300px;
+    border-radius: 5px;
+}
+
+.niz{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.price{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.korzina{
+    border: 1px solid transparent;
+    background-color: rgb(0, 150, 0);
+    border-radius: 100px;
+    padding: 5px 15px;
+    font-size: 22px;
+    color: beige;
+}
+.korzina:hover{
+    border: 1px solid rgb(0, 150, 0);
+    background-color: beige;
+    color: rgb(0, 150, 0);
+    cursor: pointer;
+}
+
+/* Преимущества */
+
+.white{
+    background-color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.plus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    color: black;
+
+}
+
+.pre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+}
+
+.elm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.elm img{
+    width: 200px;
+}
+.elm:hover img{
+    width: 180px;
+}
+
+/* Отзывы */
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.feedback__poligon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.feedback h2{
+    color: rgb(0, 150, 0);
+}
+
+.feedback__card{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    border-radius: 30px;
+}
+
+.feedback__star{
+    display: flex;
+    gap: 10px;
+}
+
+input[name="r"] {
+    display: none;
+}
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 25%;
+}
+
+.navigation{
+    display: flex;
+    gap: 10px;
+    margin-top: -170px;
+}
+
+.lab{
+    width: 20px;
+    height: 20px;
+    background: #565353;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.feedback__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.feedback__text{
+    width: 700px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: #797676;
+    border-radius: 20px;
+    padding: 40px 40px 30px 40px;
+    height: 250px;
+}
+
+.feedback__user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.lab:hover{
+    opacity: 1;
+    background: #363131;
+    transform: scale(1.1);
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+
+.feedback__text:active{
+    transform: scale(1.08);
+}
+
+.feedback__text p{
+    font-weight: 300;
+    color: white;
+}
+
+.feedback__user h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #454545;
+}
+
+.feedback__user p{
+    font-weight: 600;
+    color: #45454565;
+}
+
+.feedback__star img{
+    width: 30px;
+}
+
+/* форма для звонка */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: beige;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+.fonform{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../media/background/fonform.jpg);
+    background-size: cover;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+form input{
+    padding: 7px 15px;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    background-color: beige;
+}
+form a{
+    border: 2px solid transparent;
+    background-color: beige;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 5px 15px;
+    font-weight: 500;
+}
+
+.form a:hover{
+    background-color: transparent;
+    border: 2px solid beige;
+}
+
+
+/* Контакты и адрес */
+
+.karta {
+    background-image: url(../media/background/karta.png);
+    background-size: cover;
+    height: 70vh;
+}
+
+.tel {
+    margin-top: 120px;
+    background-color: rgb(0, 150, 0);
+    width: 270px;
+    color: beige;
+    box-shadow: 0 0 20px rgb(0, 150, 0);
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+.min{
+    padding-top: 140px;
+}
+
+.tel a{
+    color: beige;
+    cursor: pointer;
+}
+
+/* Кнопка наверх */
+.vh a{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: rgb(149, 45, 45);
+    width: 50px;
+    height: 50px;
+    z-index: 10000;
+}
